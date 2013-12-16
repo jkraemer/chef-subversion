@@ -1,4 +1,4 @@
-<Location /svn>
+<Location <%= node['subversion']['server_path'] %>>
 
   DAV svn
 
@@ -8,7 +8,7 @@
 
   AuthType Basic
 
-  AuthName "Subversion repository"
+  AuthName "<%= node['subversion']['repo_authname'] %>"
 
   AuthUserFile <%= node['subversion']['repo_dir'] %>/htpasswd
 

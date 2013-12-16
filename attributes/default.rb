@@ -19,8 +19,10 @@
 #
 
 default['subversion']['repo_dir'] = '/srv/svn'
-default['subversion']['repo_name'] = 'repo'
+default['subversion']['repo_name'] = nil
+default['subversion']['repo_authname'] = 'subversion repository'
 default['subversion']['server_name'] = 'svn'
+default['subversion']['server_path'] = '/svn'
 default['subversion']['user'] = 'subversion'
 default['subversion']['password'] = 'subversion'
 default['subversion']['list_parent_path'] = 'off'
